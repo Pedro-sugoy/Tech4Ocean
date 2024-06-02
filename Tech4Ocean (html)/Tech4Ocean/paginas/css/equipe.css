@@ -1,0 +1,84 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e8f5f7;
+    padding: 10px 20px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: cyan;
+}
+
+
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+.h1_nome{
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.imgF{
+    height: 250px;
+    width: 200px;
+}
+
+.imgG{
+    height: 250px;
+    width: 200px;
+}
+
+.imgP{
+    height: 270px;
+    width: 200px;
+}
+
+main{
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-areas:
+    'sec1  sec3 sec2'
+    'artF  artP  artG'
+    'footer  footer  footer'
+    ;
+    
+}
+
+
+.sec1{grid-area: sec1;}
+.sec2{grid-area: sec2;}
+.sec3{grid-area: sec3;}
+.artP{grid-area: artP;}
+.artG{grid-area: artG;}
+.artF{grid-area: artF;}
+.footer{grid-area: footer;}
+
+
+
+section, article, footer{
+    padding: 15px;
+    display: flex;
+    border: 3px solid cyan;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #e8f5f7;
+}
+          
