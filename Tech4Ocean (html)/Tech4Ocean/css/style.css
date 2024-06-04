@@ -22,7 +22,6 @@ header{
     background-color: cyan;
 }
 
-
 .logo{
     height: 100px;
     width: 100px;
@@ -36,7 +35,6 @@ header{
 
 
 main{
-    
     flex-grow: 1;
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
@@ -45,7 +43,6 @@ main{
     'sec2  art2  art2'
     'footer  footer  footer'
     ;
-    
 }
 
 .img1{
