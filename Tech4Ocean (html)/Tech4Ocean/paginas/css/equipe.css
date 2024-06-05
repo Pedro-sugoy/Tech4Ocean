@@ -139,18 +139,19 @@ section, article, footer{
     }
 } 
 
-@media screen and (max-widht: 516px) {
+@media screen and (max-width: 513px){
     main{
         flex-grow: 1;
         display: grid;
         grid-template-columns: repeat(auto-fit, 1fr);
         grid-template-areas:
-        'sec1    artF'
-        'sec3    artP'
-        'sec2    artG'
-        'footer  footer'
+        'sec1 artF'
+        'sec3 artP'
+        'sec2 artG'
+        'footer footer'
         ;
     }
+
     section, article, footer{
         padding: 15px;
         display: flex;
@@ -160,4 +161,32 @@ section, article, footer{
         font-size: 1.5rem;
         background-color: #e8f5f7;
     }
-}
+} 
+
+
+@media screen and (max-width: 491px){
+    main{
+        flex-grow: 1;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-template-areas:
+        'sec1'
+        'artF'
+        'sec3'
+        'artP'
+        'sec2'
+        'artG'
+        'footer'
+        ;
+    }
+
+    section, article, footer{
+        padding: 15px;
+        display: flex;
+        border: 2px solid cyan;
+        /* justify-content: center;
+        align-items: center; */
+        font-size: 1.5rem;
+        background-color: #e8f5f7;
+    }
+} 
