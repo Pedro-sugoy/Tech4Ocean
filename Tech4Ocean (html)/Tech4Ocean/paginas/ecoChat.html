@@ -6,12 +6,27 @@
     <title>Tech 4 Ocean Eco-Chat</title>
     <link rel="stylesheet" href="css/eco_chat.css">
 </head>
+
+<script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "5f0c2d14-010e-4e11-b6f5-6c78283bd537", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "5e69f4b1-8519-4a83-8a95-e70f90039b4e", // The ID of your service instance.
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+
 <body>
     <header>
-        <img src="../img/WhatsApp Image 2024-05-27 at 08.20.53.jpeg" alt="" class="logo">
+        <img src="../img_index/WhatsApp Image 2024-05-27 at 08.20.53.jpeg" alt="" class="logo">
         <h1 class="h1_nome">Tech 4 Ocean</h1>
     </header>
-    <hr>
+    
     <nav>
         <ul class="menu">
             <li><a href="cadastro.html">Cadastro</a></li>
@@ -19,7 +34,7 @@
             <li><a href="/Tech4Ocean (html)/Tech4Ocean/index.html">Página principal</a></li>
         </ul>
     </nav>
-    <hr>
+    
     <main>
         <section class="sec1">
             <img src="../paginas/img/ia.png" alt="ia_img" class="imgIa">
@@ -34,7 +49,9 @@
                 * Chamar um veículo para fazer a coleta do lixo que foi denúnciado.<br>
                 * Realizar o pagamento do veículo que foi chamado.<br>
                 A utilização do Eco-chat pode ser feita via web ou pelo app ou site do Telegram.<br> <br>
-                *No pagamento do transporte há uma pequena taxa de transporte do lixo.*
+                *No pagamento do transporte há uma pequena taxa de transporte do lixo.* <br>
+                <br>
+                Acesse o chatBot por meio do icone na parte inferior da página 
             </p>
         </article>
         <article class="art2">
