@@ -114,4 +114,51 @@ section, article, footer{
     border: 2px solid black;
     background-color: cyan;
 }
-          
+
+@media screen and (max-width: 730px){
+    main{
+        flex-grow: 1;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-template-areas:
+        'sec1    sec3'
+        'artF    artP'
+        'sec2    artG'
+        'footer  footer'
+        ;
+    }
+
+    section, article, footer{
+        padding: 15px;
+        display: flex;
+        border: 2px solid cyan;
+        /* justify-content: center;
+        align-items: center; */
+        font-size: 1.5rem;
+        background-color: #e8f5f7;
+    }
+} 
+
+@media screen and (max-widht: 516px) {
+    main{
+        flex-grow: 1;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-template-areas:
+        'sec1    artF'
+        'sec3    artP'
+        'sec2    artG'
+        'footer  footer'
+        ;
+    }
+
+    section, article, footer{
+        padding: 15px;
+        display: flex;
+        border: 2px solid cyan;
+        /* justify-content: center;
+        align-items: center; */
+        font-size: 1.5rem;
+        background-color: #e8f5f7;
+    }
+}

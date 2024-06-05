@@ -96,5 +96,26 @@ section, article, footer{
     background-color: #e8f5f7;
 }
 
+@media screen and (max-width: 258px){
+    main{
+        flex-grow: 1;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-template-areas:
+        'art1'
+        'form'
+        'footer'
+        ;
+    }
 
+    section, article, footer{
+        padding: 15px;
+        display: flex;
+        border: 2px solid cyan;
+        /* justify-content: center;
+        align-items: center; */
+        font-size: 1.5rem;
+        background-color: #e8f5f7;
+    }
+} 
 

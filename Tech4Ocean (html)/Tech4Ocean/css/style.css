@@ -58,6 +58,26 @@ main{
     ;
 }
 
+.art1{
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-areas:
+    'tit1 sob1 sob1'
+    'sob1 sob1 sob1'
+    ;
+}
+
+.art2{
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-areas:
+    'tit2 sob2 sob2'
+    'sob2 sob2 sob2'
+    ;
+}
+
 .img1{
     height: 200px;
     width: 200px;
@@ -85,15 +105,17 @@ section, article, footer{
     background-color: #e8f5f7;
 }
 
-@media screen and (max-width: 1020px){
+@media screen and (max-width: 691px){
     main{
         flex-grow: 1;
         display: grid;
         grid-template-columns: repeat(auto-fit, 1fr);
         grid-template-areas:
-        'art1  art1  sec1'
-        'sec2  art2  art2'
-        'footer  footer  footer'
+        'sec1'
+        'art1'
+        'sec2'
+        'art2'
+        'footer'
         ;
     }
 
