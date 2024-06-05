@@ -151,7 +151,6 @@ section, article, footer{
         'footer  footer'
         ;
     }
-
     section, article, footer{
         padding: 15px;
         display: flex;
