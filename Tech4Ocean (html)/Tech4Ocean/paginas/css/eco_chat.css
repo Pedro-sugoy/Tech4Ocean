@@ -102,11 +102,10 @@ section, article, footer{
         display: grid;
         grid-template-columns: repeat(auto-fit, 1fr);
         grid-template-areas:
-        'sec1'
-        'art1'
-        'sec2'
-        'art2'
-        'footer'
+        'sec1   sec1'
+        'art1   art1'
+        'sec2   art2'
+        'footer footer'
         ;
     }
 
@@ -123,7 +122,7 @@ section, article, footer{
     section, article, footer{
         padding: 15px;
         display: flex;
-        border: 2px solid cyan;
+        border: 2px solid #0c49f5;
         /* justify-content: center;
         align-items: center; */
         font-size: 1.5rem;
