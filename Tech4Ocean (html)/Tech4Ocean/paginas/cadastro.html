@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech 4 Ocean</title>
+    <script src="js/cadastro.js" defer></script>
     <link rel="stylesheet" href="css/cadastro.css">
 </head>
 <body>
@@ -25,20 +26,20 @@
             <h2>Cadastro do usuário</h2>
         </article>
 
-        <form action="Cadastrar" method="get" class="form">
+        <form action="Cadastrar" method="get" id="form">
             <fieldset>
                 <legend>Dados pessoais</legend>
                 <label for="idEmail">Email: </label>
                 <input type="text" name="email" id="idEmail" required><br>
     
                 <label for="idsenha">Senha: </label>
-                <input type="text" name="senha" id="idsenha" required> <br>
-            </fieldset>
-            <br>
-            <hr size="4" color="black">
+                <input type="text" name="senha" id="idsenha" required><br>
+
+                <br>
+
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
-            </hr>
+            </fieldset>
         </form>
     </main>
 
